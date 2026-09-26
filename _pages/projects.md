@@ -2,64 +2,28 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: 참여 연구 과제
 nav: true
 nav_order: 3
-display_categories: [work, fun]
-horizontal: false
 ---
 
-<!-- pages/projects.md -->
-<div class="projects">
-{% if site.enable_project_categories and page.display_categories %}
-  <!-- Display categorized projects -->
-  {% for category in page.display_categories %}
-  <a id="{{ category }}" href=".#{{ category }}">
-    <h2 class="category">{{ category }}</h2>
-  </a>
-  {% assign categorized_projects = site.projects | where: "category", category %}
-  {% assign sorted_projects = categorized_projects | sort: "importance" %}
-  <!-- Generate cards for each project -->
-  {% if page.horizontal %}
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
-    </div>
-  </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
-  {% endfor %}
+### 국가 연구개발 과제
 
-{% else %}
+| 과제명 | 전문기관 | 참여기간 |
+| --- | --- | --- |
+| AI 영상분석 기반 판유리 운반작업 충돌위험 예측 및 산재예방 시스템 개발 | 중소기업기술정보진흥원 | 2026 ~ 2028 |
+| 딥러닝 기반 영상 검출과 분할을 이용한 지능형 강화유리 측정 솔루션 개발 | 중소기업기술정보진흥원 | 2024 ~ 2026 |
+| 하이브리드 전기차 배터리 유연 생산을 위한 인공지능 기반 무인 자율제조 시스템 개발 및 구축 | 한국산업기술기획평가원 | 2024 ~ 2027 |
+| 라이다-카메라 센서 융합을 위한 머신러닝 기반 Extrinsic Calibration과 시간 동기화 알고리즘 개발 | 한국연구재단 | 2024 ~ 2025 |
+| 중형급 산업용 전동기 공통 기반기술 개발 | 한국에너지기술평가원 | 2023 ~ 2026 |
+| 시운전시험 시험구간 자동검지시스템 영상분석기법 활용 | 한국철도기술연구원 | 2023 |
+| 지능형 철도 역사를 위한 심층 신경망을 이용한 객체 검출 및 영상 분석 기술 개발 | 한국연구재단 | 2021 ~ 2023 |
 
-<!-- Display projects without categories -->
+### 산학 협력 과제
 
-{% assign sorted_projects = site.projects | sort: "importance" %}
-
-  <!-- Generate cards for each project -->
-
-{% if page.horizontal %}
-
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
-    </div>
-  </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
-{% endif %}
-</div>
+| 과제명 | 협력기관 | 참여기간 |
+| --- | --- | --- |
+| 개체 자동 검출 및 분류 모델 개발 | (주)알체라 | 2026 |
+| 스마트공장을 위한 딥러닝 모델 개발 | (주)티움솔루션즈 | 2026 |
+| 스마트공장을 위한 인공지능 모델 개발 | (주)티움솔루션즈 | 2025 |
+| 딥러닝 기반의 부품 품질 분석 기술 개발 | (주)마요네즈랩 | 2023 |
