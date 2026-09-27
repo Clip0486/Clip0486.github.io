@@ -11,6 +11,7 @@ profile:
   more_info: >
     <p>📧 ffrom486@a.ut.ac.kr</p>
     <p>📍 157, Cheoldobangmulgwan-ro, Uiwang-si, Gyeonggi-do</p>
+    <p> <a href="https://drive.google.com/file/d/1Dph2zwXKWFa7-SeS_gyCrs-pQngpCyEF/view?usp=sharing">CV</a> </p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
